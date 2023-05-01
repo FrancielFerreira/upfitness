@@ -27,12 +27,12 @@ export default function Perfil() {
 
             <main className={styles.treinamentos}>
               <div className={styles.treinoLista}>
-                <CardTreino dia="Segunda" treino="Peito" />
-                <CardTreino dia="Terça" treino="Pernas" />
-                <CardTreino dia="Quarta" treino="Costas" />
-                <CardTreino dia="quinta" treino="Bicípes" />
-                <CardTreino dia="Sexta" treino="Ombro" />
-                <CardTreino dia="Sábado" treino="Tricípes" />
+                <CardTreino dia="Segunda" grupoMuscular="Peito" />
+                <CardTreino dia="Terça" grupoMuscular="Pernas" />
+                <CardTreino dia="Quarta" grupoMuscular="Costas" />
+                <CardTreino dia="Quinta" grupoMuscular="Bicípes" />
+                <CardTreino dia="Sexta" grupoMuscular="Ombro" />
+                <CardTreino dia="Sábado" grupoMuscular="Tricípes" />
               </div>
             </main>
           </div>

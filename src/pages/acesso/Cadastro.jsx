@@ -1,6 +1,7 @@
 import Logo from './../../assets/logo.png';
 import CoverImg from './../../assets/cover-cadastro.jpg';
 import styles from './Style.module.css';
+import { Link } from 'react-router-dom';
 
 function Cadastro() {
   return (
@@ -9,9 +10,9 @@ function Cadastro() {
           <div className={styles.cadastro}>
             <div className={styles.formFields}>
               <div className={styles.formHeader}>
-                <a href="/">
+                <Link to="/">
                   <img src={Logo} alt="logotipo" />
-                </a>
+                </Link>
                 <h1>Cadastro Atleta</h1>
               </div>
 
@@ -62,12 +63,12 @@ function Cadastro() {
                 </div>
 
                 <div className={styles.formBtn}>
-                  <a href="/recuperar-senha" className={styles.link}>
+                  <Link to="/recuperar-senha" className={styles.link}>
                     Esqueci a senha
-                  </a>
+                  </Link>
                   <button className={styles.btn}>Cadastre-se</button>
                   <p>
-                    Já possui uma conta? <a href="/login">Faça login</a>
+                    Já possui uma conta? <Link to="/login">Faça login</Link>
                   </p>
                 </div>
               </form>

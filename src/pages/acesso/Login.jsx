@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Logo from './../../assets/logo.png';
 import styles from './Style.module.css';
 
@@ -8,9 +9,9 @@ function Login() {
         <div className={styles.form}>
           <div className={styles.container360}>
             <div className={styles.formHeader}>
-              <a href="/">
+              <Link to="/">
                 <img src={Logo} alt="logotipo" />
-              </a>
+              </Link>
               <h1>Login</h1>
             </div>
 
@@ -26,12 +27,12 @@ function Login() {
               </div>
 
               <div className={styles.formBtn}>
-                <a href="/recuperar-senha" className={styles.link}>
+                <Link to="/recuperar-senha" className={styles.link}>
                   Esqueci a senha
-                </a>
+                </Link>
                 <button className={styles.btn}>Entrar</button>
                 <p>
-                  Ainda não possui uma conta? <a href="/cadastro">Cadastre-se</a>
+                  Ainda não possui uma conta? <Link to="/cadastro">Cadastre-se</Link>
                 </p>
               </div>
             </form>

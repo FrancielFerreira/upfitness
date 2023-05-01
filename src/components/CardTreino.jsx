@@ -5,7 +5,7 @@ export default function CardTreino(props) {
     <div className={styles.treinoCard}>
       <div className={styles.cardTitle}>
         <h2>{props.dia}</h2>
-        <p>{props.treino}</p>
+        <p>{props.grupoMuscular}</p>
       </div>
 
       <table>
