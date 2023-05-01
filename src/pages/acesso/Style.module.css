@@ -4,7 +4,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: borderBox;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -20,14 +20,11 @@ a {
   color: #555;
 }
 
-.content {
+.container {
   min-height: 100vh;
   padding: 0;
   margin: 0;
   padding: 80px 20px;
-}
-
-.container {
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -50,27 +47,27 @@ a {
 }
 
 /* logo */
-.form-header {
+.formHeader {
   text-align: center;
 }
 
-.form-header img {
+.formHeader img {
   width: 120px;
 }
 
 /* titulo */
-.form-header h1 {
+.formHeader h1 {
   margin: 20px 0 32px;
   font-size: 1.5rem;
   font-weight: 500;
 }
 
-.form-header p {
+.formHeader p {
   margin-bottom: 32px;
   text-align: left;
 }
 
-.form-input label {
+.formInput label {
   font-weight: 500;
   position: relative;
   top: 10px;
@@ -80,11 +77,11 @@ a {
   transition: .3s;
 }
 
-.form-input:hover label {
+.formInput:hover label {
   color: orangered;
 }
 
-.form-input input {
+.formInput input {
   width: 100%;
   padding: 16px;
   display: block;
@@ -96,20 +93,20 @@ a {
   border-radius: 4px;
 }
 
-.form-input input:hover,
-.form-input input:focus {
+.formInput input:hover,
+.formInput input:focus {
   border-color: orangered;
 }
 
-.form-input input::placeholder {
+.formInput input::placeholder {
   font-size: 1rem;
 }
 
-.form-btn {
+.formBtn {
   text-align: center;
 }
 
-.form-btn button.btn {
+.formBtn button.btn {
   display: block;
   width: 100%;
   padding: 12px 24px;
@@ -124,12 +121,12 @@ a {
   border-radius: 4px;
 }
 
-.form-btn button.btn:hover {
+.formBtn button.btn:hover {
   background: #333;
   transform: scale(0.98);
 }
 
-.form-btn button.btn-alt {
+.formBtn button.btn-alt {
   display: block;
   width: 100%;
   padding: 12px 24px;
@@ -144,17 +141,17 @@ a {
   border-radius: 4px;
 }
 
-.form-btn button.btn-alt:hover {
+.formBtn button.btn-alt:hover {
   background: #ddd;
   transform: scale(0.98);
 }
 
-.form-btn .link {
+.formBtn .link {
   display: block;
   margin-top: 20px;
 }
 
-.form-btn p {
+.formBtn p {
   text-align: center;
 }
 
@@ -173,22 +170,22 @@ a {
   overflow: hidden;
 }
 
-.cadastro .form-header {
+.cadastro .formHeader {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
   align-items: center;
 }
 
-.cadastro .form-header h1 {
+.cadastro .formHeader h1 {
   margin: 0;
 }
 
-.form-fields {
+.formFields {
   padding: 40px;
 }
 
-.form-img img {
+.formImg img {
   height: 100%;
   object-fit: cover;
 }
