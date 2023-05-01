@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Logo from './../../assets/logo.png';
 import styles from './Style.module.css';
 
@@ -11,7 +12,7 @@ function RecuperarSenha() {
           <div className={styles.container360}>
 
             <div className={styles.formHeader}>
-              <a href="/"><img src={Logo} alt="logotipo" /></a>
+              <Link to="/"><img src={Logo} alt="logotipo" /></Link>
               <h1>Esqueceu a senha?</h1>
               <p>Digite o endereço de e-mail que você usou no cadastro que enviaremos instruções para redefinir sua senha.</p>
             </div>
@@ -25,7 +26,7 @@ function RecuperarSenha() {
 
               <div className={styles.formBtn}>
                 <button className={styles.btn}>Enviar Email</button>
-                <a href="/login">Fazer login</a>
+                <Link to="/login">Fazer login</Link>
               </div>
 
             </form>
