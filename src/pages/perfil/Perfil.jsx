@@ -10,7 +10,11 @@ export default function Perfil() {
         <div className={styles.container}>
           <div className={styles.perfil}>
             <header className={styles.perfilInfo}>
-              <h1>Perfil do Aluno</h1>
+
+              <div>
+                <h1>Perfil do Aluno</h1>
+                <Link to='/'>Home</Link>
+              </div>
 
               <nav className={styles.perfilMenu}>
                 <ul>

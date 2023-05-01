@@ -5,10 +5,10 @@ import './Acesso.css';
 function Login() {
   return (
     <>
-      <div className='container content'>
-        <div className='form'>
-          <div className='container360'>
-            <div className='form-header'>
+      <div className="container content">
+        <div className="form">
+          <div className="container360">
+            <div className="form-header">
               <Link to="/">
                 <img src={Logo} alt="logotipo" />
               </Link>
@@ -16,23 +16,27 @@ function Login() {
             </div>
 
             <form>
-              <div className='form-input'>
+              <div className="form-input">
                 <label htmlFor="email">Email</label>
                 <input type="email" id="email" />
               </div>
 
-              <div className='form-input'>
+              <div className="form-input">
                 <label htmlFor="senha">Senha</label>
                 <input type="password" id="senha" />
               </div>
 
-              <div className='form-btn'>
-                <Link to="/recuperar-senha" className='link'>
+              <div className="form-btn">
+                <Link to="/recuperar-senha" className="link">
                   Esqueci a senha
                 </Link>
-                <button className='btn'>Entrar</button>
+                {/* <button className='btn'>Entrar</button> */}
+                <Link className="btn" to="/perfil">
+                  Entrar
+                </Link>
                 <p>
-                  Ainda não possui uma conta? <Link to="/cadastro">Cadastre-se</Link>
+                  Ainda não possui uma conta?{' '}
+                  <Link to="/cadastro">Cadastre-se</Link>
                 </p>
               </div>
             </form>
@@ -44,4 +48,3 @@ function Login() {
 }
 
 export default Login;
-
