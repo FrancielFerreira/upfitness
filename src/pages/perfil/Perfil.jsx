@@ -15,16 +15,16 @@ export default function Perfil() {
               <nav className={styles.perfilMenu}>
                 <ul>
                   <li>
-                    <Link>Nome</Link>
+                    <Link>Fulano de Tal</Link>
                   </li>
                   <li>
-                    <Link>Idade</Link>
+                    <Link>27 anos</Link>
                   </li>
                   <li>
                     <Link to="/historico">Historico de treino</Link>
                   </li>
                   <li>
-                    <Link>Contato</Link>
+                    <Link>(61) 9999-9999</Link>
                   </li>
                 </ul>
               </nav>
