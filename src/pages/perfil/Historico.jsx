@@ -6,7 +6,7 @@ export default function Historico() {
   return (
     <>
       <div className="content">
-        <div className="container">
+        <div className="container historico">
           <div className="historico-header">
             <h1>Historico</h1>
             <Link to="/perfil">Voltar ao perfil</Link>

@@ -26,6 +26,9 @@ img {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+.container.historico {
   padding: 40px;
   background: #fff;
 }
