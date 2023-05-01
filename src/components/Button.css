@@ -1,7 +1,6 @@
 .btn,
-.btnAlt {
-  display: block;
-  width: 100%;
+.btn-alt {
+  display: inline-block;
   padding: 12px 32px;
   font-size: .875rem;
   letter-spacing: 1px;
@@ -18,12 +17,12 @@
   text-decoration: none;
 }
 
-.btnAlt {
+.btn-alt {
   background: #fff;
   color: #111;
 }
 
 .btn:hover,
-.btnAlt:hover {
+.btn-alt:hover {
   transform: scale(1.05);
 }

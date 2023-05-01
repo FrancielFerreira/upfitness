@@ -1,6 +1,7 @@
 import ProfilePicture from './../../assets/perfil.png';
 import CardTreino from './../../components/CardTreino'
 import styles from './Perfil.module.css';
+import { Link } from 'react-router-dom';
 
 export default function Perfil() {
   return (
@@ -13,10 +14,18 @@ export default function Perfil() {
 
               <nav className={styles.perfilMenu}>
                 <ul>
-                  <li>Menu</li>
-                  <li>Menu</li>
-                  <li>Menu</li>
-                  <li>Menu</li>
+                  <li>
+                    <Link>Nome</Link>
+                  </li>
+                  <li>
+                    <Link>Idade</Link>
+                  </li>
+                  <li>
+                    <Link to="/historico">Historico de treino</Link>
+                  </li>
+                  <li>
+                    <Link>Contato</Link>
+                  </li>
                 </ul>
               </nav>
 

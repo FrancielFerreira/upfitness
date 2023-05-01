@@ -1,10 +1,10 @@
 import Menu from './Menu';
-import styles from './Header.module.css';
+import './Header.css';
 
 export default function Header() {
   return (
-    <header className={styles.header}>
-      <div className={styles.container}>
+    <header className='header'>
+      <div className='container'>
         <h1>Home</h1>
         <Menu />
       </div>

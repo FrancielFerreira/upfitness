@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 import Logo from './../../assets/logo.png';
-import styles from './Style.module.css';
+import './Acesso.css';
 
 function Login() {
   return (
-    <div>
-      <div className={styles.container}>
-        <div className={styles.form}>
-          <div className={styles.container360}>
-            <div className={styles.formHeader}>
+    <>
+      <div className='container content'>
+        <div className='form'>
+          <div className='container360'>
+            <div className='form-header'>
               <Link to="/">
                 <img src={Logo} alt="logotipo" />
               </Link>
@@ -16,21 +16,21 @@ function Login() {
             </div>
 
             <form>
-              <div className={styles.formInput}>
+              <div className='form-input'>
                 <label htmlFor="email">Email</label>
                 <input type="email" id="email" />
               </div>
 
-              <div className={styles.formInput}>
+              <div className='form-input'>
                 <label htmlFor="senha">Senha</label>
                 <input type="password" id="senha" />
               </div>
 
-              <div className={styles.formBtn}>
-                <Link to="/recuperar-senha" className={styles.link}>
+              <div className='form-btn'>
+                <Link to="/recuperar-senha" className='link'>
                   Esqueci a senha
                 </Link>
-                <button className={styles.btn}>Entrar</button>
+                <button className='btn'>Entrar</button>
                 <p>
                   Ainda não possui uma conta? <Link to="/cadastro">Cadastre-se</Link>
                 </p>
@@ -39,7 +39,7 @@ function Login() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

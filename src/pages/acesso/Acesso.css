@@ -20,11 +20,24 @@ a {
   color: #555;
 }
 
-.container {
-  min-height: 100vh;
-  padding: 0;
+/* remove arrows from imput number in Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   margin: 0;
+}
+/* remove arrows from imput number in Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.content {
+  min-height: 100vh;
   padding: 80px 20px;
+}
+
+.container {
+  margin: 0;
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -47,66 +60,87 @@ a {
 }
 
 /* logo */
-.formHeader {
+.form-header {
   text-align: center;
 }
 
-.formHeader img {
+.form-header img {
   width: 120px;
 }
 
 /* titulo */
-.formHeader h1 {
+.form-header h1 {
   margin: 20px 0 32px;
   font-size: 1.5rem;
   font-weight: 500;
 }
 
-.formHeader p {
+.form-header p {
   margin-bottom: 32px;
   text-align: left;
 }
 
-.formInput label {
+.form-fieldset legend,
+.form-input label {
   font-weight: 500;
   position: relative;
   top: 10px;
   left: 16px;
+  color: #222;
   background: #fff;
   padding: 0 12px;
   transition: .3s;
 }
 
-.formInput:hover label {
-  color: orangered;
+.form-fieldset legend {
+  position: inherit;
 }
 
-.formInput input {
+.form-fieldset,
+.form-input input {
   width: 100%;
   padding: 16px;
   display: block;
   outline: none;
-  border: 1px solid #555;
+  border: 1px solid #999;
   transition: .3s;
   font-size: 1rem;
   background: transparent;
   border-radius: 4px;
 }
 
-.formInput input:hover,
-.formInput input:focus {
-  border-color: orangered;
+.form-fieldset {
+  padding: 0 16px;
+  margin-top: 12px;
+  display: flex;
 }
 
-.formInput input::placeholder {
+.form-fieldset input {
+  margin-right: 12px;
+  position: relative;
+  bottom: 3px;
+}
+
+.form-fieldset label {
+  padding: 8px 8px 16px;
+  display: inline-block;
+}
+
+.form-fieldset:hover,
+.form-input input:hover,
+.form-input input:focus {
+  border-color: #111;
+}
+
+.form-input input::placeholder {
   font-size: 1rem;
 }
 
-.formBtn {
+.form-btn {
   text-align: center;
 }
 
-.formBtn button.btn {
+.form-btn button.btn {
   display: block;
   width: 100%;
   padding: 12px 24px;
@@ -121,12 +155,12 @@ a {
   border-radius: 4px;
 }
 
-.formBtn button.btn:hover {
+.form-btn button.btn:hover {
   background: #333;
   transform: scale(0.98);
 }
 
-.formBtn button.btn-alt {
+.form-btn button.btn-alt {
   display: block;
   width: 100%;
   padding: 12px 24px;
@@ -141,17 +175,17 @@ a {
   border-radius: 4px;
 }
 
-.formBtn button.btn-alt:hover {
+.form-btn button.btn-alt:hover {
   background: #ddd;
   transform: scale(0.98);
 }
 
-.formBtn .link {
+.form-btn .link {
   display: block;
   margin-top: 20px;
 }
 
-.formBtn p {
+.form-btn p {
   text-align: center;
 }
 
@@ -170,22 +204,22 @@ a {
   overflow: hidden;
 }
 
-.cadastro .formHeader {
+.cadastro .form-header {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
   align-items: center;
 }
 
-.cadastro .formHeader h1 {
+.cadastro .form-header h1 {
   margin: 0;
 }
 
-.formFields {
+.form-fields {
   padding: 40px;
 }
 
-.formImg img {
+.form-img img {
   height: 100%;
   object-fit: cover;
 }
