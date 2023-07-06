@@ -5,6 +5,7 @@ import Cadastro from './pages/acesso/Cadastro';
 import RecuperarSenha from './pages/acesso/RecuperarSenha';
 import Perfil from './pages/perfil/Perfil';
 import Historico from './pages/perfil/Historico';
+import Page404 from './pages/Page404';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/recuperar-senha" element={<RecuperarSenha />} />
         <Route path="/perfil" element={<Perfil />} />
-        <Route path='/historico' element={<Historico />} />
+        <Route path="/historico" element={<Historico />} />
+        <Route path="*" element={<Page404 />} />
       </Routes>
     </>
   );
